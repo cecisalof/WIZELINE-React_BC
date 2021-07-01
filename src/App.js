@@ -4,7 +4,7 @@ import "./styles.css";
 import Pokemon from "./components/PokeCard";
 import { mockPokemonData } from "./mock/pokeData.js";
 
-export default function App(pokemonData) {
+export default function App() {
   const [data, setData] = useState({});
   console.log("data", mockPokemonData);
 
@@ -14,7 +14,7 @@ export default function App(pokemonData) {
 
   return (
     <div className="App">
-      <h1>WelcomE to your first mini challenge!</h1>
+      <h2>Find all pokemon´s info in the card below:</h2>
       <Pokemon
         parentToChild={data}
         // key={data}
